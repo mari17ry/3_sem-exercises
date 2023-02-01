@@ -1,0 +1,65 @@
+
+body{
+    display: grid;
+    width: 100%;
+    background-color: lightcoral;
+}
+
+
+header{
+   
+  
+   background-color: white;
+   
+
+    
+}
+
+nav{
+   
+    margin: 0 20%;
+    /* for at opnå en flexcontainer, der kun fylder 80% af headeren, kalder vi på dens parent (nav) som i siderne fjerner 20% af pladsen*/
+}
+nav a {
+    text-decoration: none;
+    font-family: arial;
+    color: pink;
+    
+    
+}
+
+nav a:hover{
+    color:red;
+}
+nav li {
+    border-right: 2px solid red;
+    padding: 0 25px;
+
+}
+
+nav li:last-child{
+    border-right: none;
+    /* her fjerner vi border right fra det sidste li-element, så der kun er mellem de andre */
+    /* vi kalder direkte på den sidste i rækken i af nav's children.  */
+}
+     
+
+
+nav ul{
+
+    display: flex;
+    /* vi vil have 'ul' til at være flex containeren, for det er de 'li'erne liggers, om er elementerne, der skal rykkes rundt med.  */
+    justify-content: space-around;
+    list-style-type: none;
+    padding: 0;
+    
+    
+   
+}
+
+
+
+
+
+
+
